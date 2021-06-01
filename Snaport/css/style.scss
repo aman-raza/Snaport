@@ -1,0 +1,93 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    .container {
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: both mandatory; //proximity; (both mandatory; overflow: scroll;)
+        overflow: scroll;
+        display: flex; //
+        section {
+            flex: none;
+            //display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw; //width: calc(100vw - 100px)
+            height: 100vh;
+            scroll-snap-align: start;
+            &:nth-of-type(1) {
+                background-color: #55ACEE;
+                color: rgb(255, 255, 255);
+                display: flex;
+            }
+            &:nth-of-type(2) {
+                background-color: #007bb5;
+                color: rgb(255, 255, 255);
+                display: flex;
+            }
+            &:nth-of-type(3) {
+                background-color: black;
+                color: rgb(255, 255, 255);
+                display: flex;
+            }
+            &:nth-of-type(4) {
+                background-color: rgb(193, 30, 199);
+                color: rgb(255, 255, 255);
+                display: flex;
+            }
+            &:nth-of-type(5) {
+                background-color: rgb(20, 18, 14);
+                color: rgb(238, 240, 248);
+                display: flex;
+                h1 {
+                    text-align: center;
+                    color: white;
+                }
+            }
+            &:nth-of-type(6) {
+                background-color: rgb(44, 94, 231);
+                color: white;
+                display: flex;
+                h1 {
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+            h1 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 0.4cm;
+                .blog {
+                    text-decoration: none;
+                    color: white;
+                }
+                .blog:hover {
+                    opacity: 0.2;
+                }
+                .fa {
+                    padding: 20px;
+                    font-size: 30px;
+                    width: 50px;
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 5px 2px;
+                }
+                .fa:hover {
+                    opacity: 0.2;
+                }
+                .fa-twitter {
+                    color: #ffffff;
+                }
+                .fa-linkedin {
+                    color: #ffffff;
+                }
+                .fa-github {
+                    color: rgb(255, 255, 255);
+                }
+                .fa-instagram {
+                    color: white;
+                }
+            }
+        }
+    }
+}
